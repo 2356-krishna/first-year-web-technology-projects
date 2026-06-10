@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Toyland - An online shopping store for toys where every toy tells a story.">
+   
+    <title>Toyland</title>
+<link rel="stylesheet" href="toy website/v.css">
+</head>
+<body>
+    
+    <div id="splash-screen">
+        <video autoplay muted playsinline>
+            <source src="photos/Toyland.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="Toyland.png" alt="logo of toys"></div>
+            
+   
+         <h1>Toyland<pre>where every toy tells a story</pre></h1></div>
+        <nav>
+                   <ul>
+           <li> <a href="home.html">Home</a></li>
+           <li><a href="aboutus.html">About us</a></li>
+           <li><a href="need help.html">need help?</a></li>
+       
+                </ul>
+        </nav>
+        
+       
+
+      
+      
+
+    
+   
+
+    </header>
+    <main>
+        <section>
+            <form>      
+                     <label for="select category">select category</label>
+                <select name="select category"  id="select category">
+                    <option value="select">select</option>
+                <option value="hotwheels">hotwheels</option>  
+                <option value="All Toys">All Toys</option>
+                <option value="Rides">Rides</option>
+                <option value="educational toys">educational toys</option>
+                <option value="Family Games">Family Games</option>
+                </select>
+                <input type="text" id="search" placeholder="search any toys">
+                <input type="submit" id="search" placeholder="search">
+
+            </form>
+            <div class="toy-grid">
+                <ul>
+                <li><a href="all toys.html" target="_blank" >  <img src="photos/all toys.jpg" alt="">All Toys</a></li>
+                
+                <li><a href="rides.html" target="_blank" >  <img src="photos/kids toys_.jpg" alt="">Rides</a></li>
+                <li><a href="education toys.html" target="_blank"><img src="photos/educ.jpg" alt="">Educational toys</a></li>
+                <li><a href="puzzle.html" target="_blank"><img src="photos/puzzle.jpg" alt="">Puzzle</a></li>
+                <li><a href="family games.html" target="_blank"><img src="photos/family games.jpg" alt="">Family Games</a></li>
+                <li><a href="school supplies.html" target="_blank"><img src="photos/school supplies.jpg" alt="">School supplies</a></li>
+                <li><a href="magnetic games.html" target="_blank"><img src="photos/magnetic games.jpg" alt="">Magnetic Games</a></li>
+                <li><a href="funplay.html" target="_blank"><img src="photos/funplay.jpg" alt="">Funplay</a></li>
+                <li><a href="jenga .html" target="_blank"><img src="photos/jenga.jpg" alt="">Jenga</a></li>
+                <li><a href="vehichles.html" target="_blank"><img src="photos/hot wheels.jpg" alt="">Hot wheels</a></li>
+                <li><a href="remote control.html" target="_blank"><img src="photos/remote control.jpg" alt="">Remote control cars</a></li>
+                <li><a href="soft toys.html" target="_blank"><img src="photos/soft toys.jpg" alt="">Soft toys </a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+<footer>
+    <h1>the online shopping store for toys</h1>
+    <ul>
+           <li> <a href="home.html">Home</a></li>
+           <li><a href="aboutus.html">About us</a></li>
+           <li><a href="need help.html">need help?</a></li>
+<a href="vehichles.html" target="_blank">Hot wheels</a>
+       
+                </ul>
+<h6>Copyright © 2025 Toyland - Powered By Ac tools</h6>
+</footer>
+<script>
+    const splashScreen = document.getElementById('splash-screen');
+    const video = splashScreen.querySelector('video');
+
+    video.addEventListener('ended', () => {
+        splashScreen.style.opacity = 0;
+    });
+
+    splashScreen.addEventListener('transitionend', () => {
+        splashScreen.style.display = 'none';
+    });
+</script>
+
+</body>
+</html>

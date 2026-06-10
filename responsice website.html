@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout </title>
+  <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+      background-color: #444;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: #666;
+    }
+
+    .container {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #f2f2f2;
+      padding: 15px;
+    }
+
+   
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+   
+    @media (max-width: 768px) {
+      /* Hide sidebar */
+      .sidebar {
+        display: none;
+      }
+
+     
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        border-bottom: 1px solid #555;
+      }
+
+      /* Fix header */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+  
+      .container {
+        margin-top: 100px;
+        flex-direction: column;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Responsive Webpage</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h3>Sidebar</h3>
+      <p>This is a sidebar section. It will be hidden on smaller screens.</p>
+    </aside>
+
+    <main>
+      <h2>Welcome!</h2>
+      <p>This is the main content area. Resize the browser window to see how the layout changes.</p>
+      <img src="img1.wallspic.com-huawei-huawei_emui-flower-xiaomi-petal-2496x2496.jpg" alt="Sample Image">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at ullamcorper ligula. Integer non orci a massa bibendum hendrerit.</p>
+    </main>
+  </div>
+
+</body>
+</html>
